@@ -2,7 +2,7 @@
 <html lang="<%= current_language %>">
 <head>
 <meta charset="utf-8" />
-<title><%= html_title %></title>
+<title>Winapp Ticket Portal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="<%= Redmine::Info.app_name %>" />
 <meta name="keywords" content="issue,bug,tracker" />
@@ -87,8 +87,8 @@
     </div>
     <% end %>
 
-    <h1><%= page_header_title %></h1>
-
+    <!--     <h1><%= page_header_title %></h1> -->
+    <h1>WINAPP TICKET PORTAL</h1>
     <% if display_main_menu?(@project) %>
     <div id="main-menu" class="tabs">
         <%= render_main_menu(@project) %>
@@ -114,7 +114,7 @@
     </div>
 </div>
 <div id="footer">
-    Powered by <%= link_to Redmine::Info.app_name, Redmine::Info.url, :target => '_blank', :rel => 'noopener' %> &copy; 2006-2024 Jean-Philippe Lang
+    Powered by <%= link_to Redmine::Info.app_name, Redmine::Info.url, :target => '_blank', :rel => 'noopener' %> &copy; 2024
 </div>
 
 <div id="ajax-indicator" style="display:none;"><span><%= l(:label_loading) %></span></div>
